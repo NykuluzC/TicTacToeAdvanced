@@ -61,11 +61,12 @@ struct StartView: View {
                 }
                 Spacer()
             }
-            .padding()
+            .padding(40.0)
             .navigationTitle("Tic Tac Toe")
             .fullScreenCover(isPresented: $startGame){
                 GameView()
             }
+            .padding()
             .inNavigationStack()
     }
 }
